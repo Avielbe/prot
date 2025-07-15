@@ -1,4 +1,4 @@
-<!-- home.component.html -->
+<!-- home.component.html
 <section class="min-h-screen flex flex-col justify-center items-center gap-6">
   <h1 class="text-4xl font-semibold">👋 Welcome to Aviel’s Portfolio</h1>
   <p class="max-w-md text-center text-gray-600">
@@ -8,4 +8,67 @@
      class="px-6 py-3 rounded-full bg-emerald-600 text-white hover:bg-emerald-700 transition">
     See my work
   </a>
+</section> -->
+
+<!-- src/app/pages/home.component.html -->
+<section
+  class="relative isolate flex flex-col lg:flex-row items-center justify-center min-h-screen overflow-hidden"
+>
+  <!-- Soft gradient background -->
+  <div
+    aria-hidden="true"
+    class="absolute -z-10 inset-0 bg-gradient-to-br from-emerald-400/40 via-fuchsia-500/30 to-indigo-600/30 blur-3xl"
+  ></div>
+
+  <!-- Text block -->
+  <div class="max-w-xl space-y-6 px-6 text-center lg:text-left">
+    <h1
+      class="text-4xl sm:text-5xl font-extrabold leading-tight tracking-tight"
+    >
+      <span class="inline-block animate-slide-in-up"
+        >Hi, I’m <span class="text-emerald-600">Your&nbsp;Name</span></span
+      ><br />
+      <span class="inline-block animate-slide-in-up [animation-delay:150ms]"
+        >Full-Stack&nbsp;Developer</span
+      >
+    </h1>
+
+    <p
+      class="text-gray-700/90 text-lg leading-relaxed animate-fade-in [animation-delay:300ms]"
+    >
+      I craft engaging web & mobile experiences with Angular, React and Node.
+    </p>
+
+    <div
+      class="flex flex-wrap gap-4 justify-center lg:justify-start animate-fade-in [animation-delay:450ms]"
+    >
+      <a
+        routerLink="/projects"
+        class="px-7 py-3 rounded-full bg-emerald-600 text-white font-medium shadow hover:bg-emerald-700 focus-visible:ring focus-visible:ring-emerald-400"
+        >View Projects</a
+      >
+      <a
+        routerLink="/contact"
+        class="px-7 py-3 rounded-full border border-gray-300/70 hover:border-emerald-600 hover:text-emerald-600 transition font-medium"
+        >Contact Me</a
+      >
+    </div>
+  </div>
+
+  <!-- Optional mockup image for large screens -->
+  <figure
+    class="hidden lg:block max-w-md animate-fade-in [animation-delay:600ms]"
+  >
+    <img
+      src="assets/mockup-laptop-code.webp"
+      alt="Screenshot of my recent project"
+      class="w-full h-auto rounded-2xl shadow-lg"
+    />
+  </figure>
+
+  <!-- Scroll cue -->
+  <div class="absolute bottom-12 inset-x-0 flex justify-center">
+    <span class="animate-bounce text-gray-500 text-2xl">⌄</span>
+  </div>
 </section>
+
