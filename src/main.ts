@@ -9,9 +9,7 @@ import { provideRouter, withInMemoryScrolling, InMemoryScrollingOptions } from '
 import { routes } from './app/app.routes';
 import { AppComponent } from './app/app.component';
 
-// Configure scroll restoration & anchor-scrolling
 const scrollConfig: InMemoryScrollingOptions = {
-  // Now typed as literal union, not plain string
   scrollPositionRestoration: 'enabled',
   anchorScrolling:           'enabled'
 };
