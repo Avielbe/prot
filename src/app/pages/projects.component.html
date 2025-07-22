@@ -1,12 +1,188 @@
 <!-- projects.component.html -->
-<section class="max-w-5xl mx-auto py-12">
+<!-- <section class="max-w-5xl mx-auto py-12">
     <h2 class="text-3xl font-semibold mb-8">Projects</h2>
     <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        <!-- Repeat card -->
         <article class="border rounded-xl p-6 shadow hover:shadow-lg transition">
             <h3 class="font-medium">Project Name</h3>
             <p class="text-sm text-gray-500">Short one-sentence description.</p>
             <a href="#" target="_blank" class="inline-block mt-4 text-emerald-600 hover:underline">View Code</a>
         </article>
     </div>
+</section> -->
+
+<section id="projects" class="projects-section">
+  <div class="projects-header">
+    <h2>Featured Projects & Case Studies</h2>
+    <p>
+      A selection of my work, showcasing my skills in creating modern,
+      responsive, and user-friendly web applications.
+    </p>
+  </div>
+
+  <!-- <div class="projects-grid"> -->
+      <!-- Project Card 1 -->
+<div class="projects-grid" (click)="onGridClick($event)">
+    <article class="project-card">
+      <div class="project-image-wrapper">
+        <img
+          src="https://placehold.co/600x400/1f2937/a78bfa?text=Project+One"
+          alt="Screenshot of Project One"
+          onerror="this.onerror=null;this.src='https://placehold.co/600x400/1f2937/ffffff?text=Image+Not+Found';"
+        />
+      </div>
+      <div class="project-card-content">
+        <h3>E-Commerce Platform</h3>
+        <div class="project-tags">
+          <span>React</span><span>Node.js</span><span>Firebase</span>
+        </div>
+        <div class="project-details">
+          <p>
+            A full-stack e-commerce site with a custom CMS, real-time inventory
+            updates using Firebase, and a secure payment gateway integration.
+          </p>
+          <ul>
+            <li>
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+              Increased user engagement by 30%.
+            </li>
+            <li>
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+              Optimized page load speed by 40%.
+            </li>
+            <li>
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+              Fully responsive and accessible design.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="project-actions">
+        <a
+          href="#"
+          class="btn btn-primary-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          >View Live Site</a
+        >
+        <button
+          class="btn btn-secondary-action"
+          data-action="toggle-details"
+        >
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+          Explore
+        </button>
+      </div>
+    </article>
+
+    <!-- Project Card 2 -->
+    <article class="project-card">
+      <div class="project-image-wrapper">
+        <img
+          src="https://placehold.co/600x400/1f2937/f472b6?text=Project+Two"
+          alt="Screenshot of Project Two"
+          onerror="this.onerror=null;this.src='https://placehold.co/600x400/1f2937/ffffff?text=Image+Not+Found';"
+        />
+      </div>
+      <div class="project-card-content">
+        <h3>Data Visualization Dashboard</h3>
+        <div class="project-tags">
+          <span>Vue.js</span><span>D3.js</span><span>Tailwind CSS</span>
+        </div>
+        <div class="project-details">
+          <p>
+            An interactive dashboard for visualizing complex datasets, featuring
+            dynamic charts, filters, and data export functionality.
+          </p>
+          <ul>
+            <li>
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+              Handled over 1 million data points smoothly.
+            </li>
+            <li>
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+              Reduced data analysis time for users by 60%.
+            </li>
+            <li>
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+              Implemented with a focus on performance.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="project-actions">
+        <a
+          href="#"
+          class="btn btn-primary-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          >View Live Site</a
+        >
+        <button
+          class="btn btn-secondary-action"
+          data-action="toggle-details"
+        >
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+          Explore
+        </button>
+      </div>
+    </article>
+
+    <!-- (add more static cards here…) -->
+  </div>
 </section>

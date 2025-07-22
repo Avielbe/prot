@@ -2,30 +2,11 @@
 @import "tailwindcss";
 
 body {
-  background: #111827; color: #e5e7eb; font-family: 'Inter', sans-serif;
+  background: #111827;
+  color: #e5e7eb;
+  font-family: 'Inter', sans-serif;
 }
 
 html {
   scroll-behavior: smooth;
 }
-/* 
-
-@layer utilities {
-  #spotlight::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(
-      400px circle at var(--spot-x) var(--spot-y),
-      rgba(255, 255, 255, 0.15),
-      transparent 60%
-    );
-    transition: background 0.2s;
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-    #spotlight::before {
-      background: none;
-    }
-  }
-} */
