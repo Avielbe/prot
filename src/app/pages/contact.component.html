@@ -1,5 +1,5 @@
 <!-- contact.component.html -->
-<section class="min-h-screen flex flex-col justify-center items-center gap-4">
+<!-- <section class="min-h-screen flex flex-col justify-center items-center gap-4">
     <h2 class="text-3xl font-semibold">Get in Touch</h2>
     <form class="w-full max-w-sm flex flex-col gap-4">
         <input class="border p-3 rounded" placeholder="Your name" />
@@ -9,4 +9,104 @@
             Send
         </button>
     </form>
+</section> -->
+
+<section id="contact" class="contact-section">
+    <!-- Background floating shapes -->
+    <div class="shape shape1"></div>
+    <div class="shape shape2"></div>
+
+    <div class="contact-container">
+        <!-- Left Column -->
+        <div class="contact-info">
+            <h2>Let's Build Something Extraordinary</h2>
+            <p>
+                Have a project in mind, a question about my work, or just want to connect?
+                My inbox is always open. Feel free to reach out via the form or through my social channels.
+            </p>
+
+            <div class="contact-links">
+                <!-- Email -->
+                <a href="mailto:hello&#64;expertdev.com" class="contact-link-card">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 
+                     002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                    <div>
+                        <span>Email</span>
+                        <small>hello&#64;expertdev.com</small>
+                    </div>
+                </a>
+                <!-- WhatsApp -->
+                <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" class="contact-link-card">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 
+                     01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                    <div>
+                        <span>WhatsApp</span>
+                        <small>Let's chat</small>
+                    </div>
+                </a>
+                <!-- LinkedIn -->
+                <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer"
+                    class="contact-link-card">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 
+                     00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" />
+                        <circle cx="4" cy="4" r="2" />
+                    </svg>
+                    <div>
+                        <span>LinkedIn</span>
+                        <small>Professional Network</small>
+                    </div>
+                </a>
+                <!-- GitHub -->
+                <a href="https://github.com/yourprofile" target="_blank" rel="noopener noreferrer"
+                    class="contact-link-card">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19c-5 1.5-5-2.5-7-3m14 
+                     6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 
+                     6.44-1.54 6.44-7A5.44 5.44 0 
+                     0020 4.77 5.07 5.07 0 0019.91 
+                     1S18.73.65 16 2.48a13.38 13.38 
+                     0 00-7 0C6.27.65 5.09 1 5.09 
+                     1A5.07 5.07 0 005 4.77a5.44 
+                     5.44 0 00-1.5 3.78c0 5.42 
+                     3.3 6.61 6.44 7A3.37 3.37 0 
+                     009 18.13V22" />
+                    </svg>
+                    <div>
+                        <span>GitHub</span>
+                        <small>My Code & Projects</small>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Right Column -->
+        <form class="contact-form" action="https://formspree.io/f/your_form_id" method="POST">
+            <div class="form-group">
+                <input type="text" id="name" name="name" class="form-input" placeholder=" " required>
+                <label for="name" class="form-label">Full Name</label>
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" name="email" class="form-input" placeholder=" " required>
+                <label for="email" class="form-label">Email Address</label>
+            </div>
+            <div class="form-group">
+                <input type="text" id="subject" name="subject" class="form-input" placeholder=" " required>
+                <label for="subject" class="form-label">Subject</label>
+            </div>
+            <div class="form-group">
+                <textarea id="message" name="message" class="form-input" placeholder=" " required></textarea>
+                <label for="message" class="form-label">Your Message</label>
+            </div>
+            <button type="submit" class="submit-btn">
+                Send Message
+            </button>
+        </form>
+    </div>
 </section>
