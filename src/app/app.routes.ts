@@ -6,7 +6,7 @@ import { ContactComponent } from './pages/contact.component';
 import { VideoComponent } from './pages/video.component';
 
 export const routes: Routes = [
-    { path: '', component: HomeComponent, title: 'Home' },
+    { path: '', component: HomeComponent, title: 'Aviel Ben | Full-Stack Developer & Product Builder' },
     { path: 'about', component: AboutComponent, title: 'About' },
     { path: 'projects', component: ProjectsComponent, title: 'Projects' },
     { path: 'video', component: VideoComponent, title: 'Video' },

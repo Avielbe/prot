@@ -18,7 +18,7 @@
 
 
 // Claude version
-import { Component, HostListener, OnInit, OnDestroy, Inject, PLATFORM_ID } from '@angular/core';
+import { Component, HostListener, OnInit, OnDestroy, Inject, PLATFORM_ID,  } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 
 
