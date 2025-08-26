@@ -1,13 +1,5 @@
 <!-- fixed top nav -->
-<header class="fixed top-0 inset-x-0 bg-white/90 backdrop-blur shadow z-50">
-    <nav class="max-w-7xl mx-auto flex gap-6 px-4 py-3 text-gray-700 text-sm font-medium">
-        <a routerLink="/" fragment="home" class="hover:text-emerald-600">Home</a>
-        <a routerLink="/about" fragment="about" class="hover:text-emerald-600">About</a>
-        <a routerLink="/projects" fragment="projects" class="hover:text-emerald-600">Projects</a>
-        <a routerLink="/video" fragment="video" class="hover:text-emerald-600">Video</a>
-        <a routerLink="/contact" fragment="contact" class="hover:text-emerald-600">Contact</a>
-    </nav>
-</header>
+
 
 <!-- stacked sections -->
 <main class="pt-20 space-y-24">
@@ -15,5 +7,14 @@
     <section id="about" class="scroll-mt-20"><app-about></app-about></section>
     <section id="projects" class="scroll-mt-20"><app-projects></app-projects></section>
     <section id="video" class="scroll-mt-20"><app-video></app-video></section>
+    <section id="contact" class="scroll-mt-20"><app-contact></app-contact></section>
+</main>
+<main class="pt-20 space-y-24">
+    <section id="home" class="scroll-mt-20">
+        <app-home></app-home>
+        <div #heroSentinel style="height:1px"></div>
+    </section>
+    <section id="about" class="scroll-mt-20"><app-about></app-about></section>
+    <section id="projects" class="scroll-mt-20"><app-projects></app-projects></section>
     <section id="contact" class="scroll-mt-20"><app-contact></app-contact></section>
 </main>

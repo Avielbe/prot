@@ -1,0 +1,33 @@
+.site-nav{
+  position: fixed; inset: 0 0 auto 0; z-index: 50;
+  background: transparent;
+  backdrop-filter: none;
+  border-bottom: 0;
+  transform: translateY(0);
+  opacity: 1;
+  transition:
+    transform .28s ease,
+    opacity .2s ease,
+    background-color .2s ease,
+    backdrop-filter .2s ease,
+    border-color .2s ease;
+}
+
+/* Hide on scroll down */
+.nav-hidden{
+  transform: translateY(-110%);
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Add glass once we leave the hero */
+.nav-opaque{
+  background: rgba(17,24,39,.60);             /* slate-900/60 */
+  border-bottom: 1px solid rgba(255,255,255,.08);
+  backdrop-filter: blur(10px) saturate(1.1);
+}
+
+/* Motion safety */
+@media (prefers-reduced-motion: reduce){
+  .site-nav{ transition: none; }
+}
